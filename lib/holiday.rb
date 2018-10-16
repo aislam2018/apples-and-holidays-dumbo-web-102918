@@ -69,8 +69,8 @@ def all_supplies_in_holidays(holiday_hash)
         holiday_words.map do { |word| word.capitalize }
     
         holiday_capped = holiday_words.join(" ")
-        ele_split = ele.split(" ")
-        ele_split.map do { |x| x.capitalize }
+        ele_words = ele.split(" ")
+        ele_words.map do { |word| word.capitalize }
         ele_capped = ele_split.join(" ")
         puts "#{seasons_cappedcapped}:"
         puts "#{holiday_capped}: #{ele_capped}" 
