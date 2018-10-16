@@ -76,6 +76,7 @@ def all_holidays_with_bbq(holiday_hash)
   if holiday_hash[seasons][holidays][supply].include?("BBQ")
     holiday_names.push(holiday)
     holiday_names
+  end
   end 
   end
 end
