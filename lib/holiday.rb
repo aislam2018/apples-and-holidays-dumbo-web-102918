@@ -61,13 +61,18 @@ def all_supplies_in_holidays(holiday_hash)
     holidays.each do |holiday, supply| 
       supply.each do |ele|
         seasons_str = seasons.to_s
+        
         holiday_str = holiday.to_s
+        
         seasons_capped = seasons_str.capitalize
-        split_str = holiday_str.split(" ")
+        split_str = holiday_str.split("_")
+        
+        binding.pry
+    
         holiday_capped = split_str.capitalize!.join(" ")
         ele_split = ele.split(" ")
         ele_capped = ele_split.capitalize!.join(" ")
-        puts "#{seasons_cappedcapped}:" }
+        puts "#{seasons_cappedcapped}:"
         puts "#{holiday_capped}: #{ele_capped}" 
       end
     end
